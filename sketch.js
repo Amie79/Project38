@@ -1,7 +1,7 @@
 var PLAY = 1;
 var END = 0;
 var gameState = PLAY;
-this.index=0;
+
 var trex, trex_running, trex_collided;
 var ground, invisibleGround, groundImage;
 
@@ -77,7 +77,7 @@ function setup() {
   score = 0;
 
   camera.position.x=displayWidth/2;
-  camera.position.y=trex[index-1].y;
+  camera.position.y=trex.y;
   
 }
 
