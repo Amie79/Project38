@@ -76,8 +76,8 @@ function setup() {
   
   score = 0;
 
-  camera.position.x=displayWidth/2;
-  camera.position.y=trex.y;
+  camera.position.y=displayWidth/2;
+  camera.position.x=trex.x;
   
 }
 
@@ -95,7 +95,7 @@ function draw() {
     gameOver.visible = false;
     restart.visible = false;
     
-    ground.velocityX = -(4 + 3* score/100)
+   // ground.velocityX = -(4 + 3* score/100)
     //scoring
     score = score + Math.round(getFrameRate()/60);
     
